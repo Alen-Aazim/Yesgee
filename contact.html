@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Yesgee Power Eximco</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">YesGee Power Eximco</a>
+
+      <div class="hamburger" onclick="document.querySelector('.nav').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact Us</h1>
+    <div class="contact-grid">
+
+      <div>
+        <h3>Location</h3>
+        <p>Burj Al Safa, Thurakkal, Calicut Road Manjeri, Malappuram Dt, Kerala - 676121</p>
+        <a href="https://share.google/ZPEg7o8R8rXnvz6S4" target="_blank" class="btn primary">Open in Maps</a>
+
+        <h3 style="margin-top: 24px;">WhatsApp</h3>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+          <a href="https://wa.me/918136801820" target="_blank" class="btn primary">+91 81368 01820</a>
+          <a href="https://wa.me/919495845397" target="_blank" class="btn primary">+91 94958 45397</a>
+        </div>
+
+        <h3 style="margin-top: 24px;">Instagram</h3>
+        <a href="https://instagram.com/yesgeepowereximco" target="_blank" class="btn primary">@yesgeepowereximco</a>
+
+        <h3 style="margin-top: 24px;">YouTube</h3>
+        <a href="https://youtube.com/@YesgeePowerEximco" target="_blank" class="btn primary">Yesgee Power Eximco</a>
+
+        <h3 style="margin-top: 24px;">Facebook</h3>
+        <a href="https://www.facebook.com/yesgeesolar" target="_blank" class="btn primary">Visit Facebook Page</a>
+      </div>
+
+      <div>
+        <h3>Send a message</h3>
+        <form id="contact-form">
+          <label>Name
+            <input name="name" required>
+          </label>
+
+          <label>Email
+            <input name="email" type="email" required>
+          </label>
+
+          <label>Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    © <span id="year5"></span> Yesgee Power Eximco
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

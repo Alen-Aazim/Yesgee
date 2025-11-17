@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yesgee Power Eximco — Products</title>
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Yesgee Power Eximco</a>
+
+      <div class="hamburger" onclick="document.querySelector('.nav').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="section-title">Our Products</h1>
+
+    <!-- FILTERS -->
+    <div class="filter-section">
+      <label for="category-filter">Filter by Category:</label>
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+      </select>
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <div id="products-grid" class="grid-3"></div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year2"></span> Yesgee Power Eximco — All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year2").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/cart.js"></script>
+
+</body>
+</html>

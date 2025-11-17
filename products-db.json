@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": "p1763343241713",
+      "title": "Test 1",
+      "category": "Hahshss",
+      "price": 18076,
+      "image": "https://i.ibb.co/d070D2Tt/Screenshot-20251116-134958.jpg",
+      "description": "Hshshshhs"
+    },
+    {
+      "id": "p1763306888157",
+      "title": "Ruzaim",
+      "category": "Ruza",
+      "price": 1999,
+      "image": "https://ibb.co/GvFvR269",
+      "description": "Hey ruzza"
+    }
+  ]
+}

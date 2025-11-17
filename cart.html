@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Cart — Yesgee Power Eximco</title>
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Yesgee Power Eximco</a>
+
+      <div class="hamburger" onclick="document.querySelector('.nav').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CART SECTION -->
+  <main class="container">
+
+    <h1 class="section-title">Your Cart</h1>
+
+    <div class="card" style="padding: 20px; margin-bottom: 30px;">
+      <div id="cart-items"></div>
+      <hr style="border: 1px solid var(--border); margin: 20px 0;">
+      <div id="cart-summary"></div>
+    </div>
+
+    <div class="cart-actions" style="display: flex; gap: 16px;">
+      <button id="clear-cart" class="btn" style="flex: 1; text-align: center;">Clear Cart</button>
+      <button id="checkout" class="btn" style="flex: 1; text-align: center; background: var(--accent); color: #003438;">
+        Checkout
+      </button>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="year4"></span> Yesgee Power Eximco — All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year4").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/js/cart.js"></script>
+
+</body>
+</html>
